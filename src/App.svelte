@@ -2,109 +2,149 @@
   const username = 'wix';
 </script>
 
-<main>
-  <h1>ATTENTION, Philly</h1>
+<div class="page">
+  <main>
+    <h1>ATTENTION, PHILLY</h1>
 
-  <p class="description">
-    An events bulletin for Philadelphians looking to connect, exchange, and
-    create in spaces that exercise our attention and leave big-tech behind.
-  </p>
+    <p class="description">
+      A biweekly bulletin of events for Philadelphians looking to connect,
+      exchange, and create in spaces that exercise attention and leave
+      big-tech behind.
+    </p>
 
-  <form
-    action="https://buttondown.com/api/emails/embed-subscribe/{username}"
-    method="post"
-  >
-    <label for="email" class="visually-hidden">Email address</label>
-    <input
-      type="email"
-      name="email"
-      id="email"
-      placeholder="you@example.com"
-      autocomplete="email"
-      required
-    />
-    <input type="hidden" name="embed" value="1" />
-    <button type="submit">Sign up</button>
-  </form>
-</main>
+    <form
+      action="https://buttondown.com/api/emails/embed-subscribe/{username}"
+      method="post"
+    >
+      <label for="email" class="visually-hidden">Email address</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="you@example.com"
+        autocomplete="email"
+        required
+      />
+      <input type="hidden" name="embed" value="1" />
+      <button type="submit">Sign up</button>
+    </form>
+  </main>
+</div>
 
 <style>
+  @font-face {
+    font-family: 'CC Red Alert INET';
+    src: url('/fonts/cc-red-alert-inet.ttf') format('truetype');
+    font-display: swap;
+  }
+
   :global(*) { box-sizing: border-box; }
 
+    :global(html),
   :global(body) {
     margin: 0;
-    background: #f4f1ea;
-    color: #141414;
+    padding: 0;
+    min-height: 100%;
+  }
+
+  :global(body) {
+    display: block;
+    background: #d9c88a;
+    color: #1a1a1a;
     font-family: system-ui, -apple-system, sans-serif;
   }
 
-   main {
+  :global(#app) {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: left;
+  }
+
+  .page {
+    width: 100%;
     min-height: 100vh;
-    max-width: 72rem;
+    max-width: 70rem;
     margin: 0 auto;
-    padding: clamp(2rem, 6vw, 5rem) 1.25rem;
+    background: #e8dcae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.25rem;
+  }
+
+  /* Column width is set by the headline; description and form match it */
+  main {
+    width: fit-content;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: clamp(1.5rem, 4vw, 2.5rem);
+    gap: 1.5rem;
   }
 
   h1 {
     margin: 0;
-    font-family: 'Instrument Serif', Georgia, serif;
+    font-family: 'CC Red Alert INET', monospace;
     font-weight: 400;
-    font-size: clamp(4rem, 16vw, 13rem);
-    line-height: 0.9;
-    letter-spacing: -0.02em;
-    color: black;
+    font-size: clamp(1.75rem, 8.5vw, 4.5rem);
+    line-height: 1;
+    white-space: nowrap;
+    color: #6d1a8a;
+  }
+
+  .description,
+  form {
+    width: 0;
+    min-width: 100%;
   }
 
   .description {
-    margin: 0 auto;
-    max-width: 36rem;
-    font-size: clamp(1.1rem, 2.2vw, 1.4rem);
-    line-height: 1.5;
+    margin: 0;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 1rem;
+    line-height: 2.35;
+    text-align: justify;
   }
 
   form {
     display: flex;
-    justify-content: center;
     gap: 0.5rem;
-    width: 100%;
-    max-width: 32rem;
     flex-wrap: wrap;
   }
 
   input[type='email'] {
-    flex: 1 1 16rem;
-    padding: 0.85rem 1rem;
+    flex: 1 1 14rem;
+    padding: 1rem 1.1rem;
     font: inherit;
-    font-size: 1rem;
-    border: 2px solid #141414;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    border: 2px solid #6d1a8a;
     border-radius: 0;
     background: transparent;
   }
 
+  input[type='email']::placeholder { color: #7a7a7a; }
+
   input[type='email']:focus {
     outline: none;
-    background: #fff;
+    background: #f3ead0;
   }
 
   button {
-    padding: 0.85rem 1.5rem;
+    padding: 1rem 1.75rem;
     font: inherit;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: #f4f1ea;
-    background: #141414;
-    border: 2px solid #141414;
+    color: #fff;
+    background: #6d1a8a;
+    border: 2px solid #6d1a8a;
     border-radius: 0;
     cursor: pointer;
   }
 
-  button:hover { background: #333; }
+  button:hover { background: #561470; }
 
   .visually-hidden {
     position: absolute;

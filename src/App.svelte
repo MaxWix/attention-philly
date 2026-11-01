@@ -8,7 +8,8 @@
 
     <p class="description">
       A biweekly bulletin of events for Philadelphians looking to connect,
-      create, and exercise our attention in off-tech spaces, leaving big tech behind.
+      create, and exercise our attention in off-tech spaces, leaving big tech
+      behind.
     </p>
 
     <form
@@ -39,7 +40,7 @@
 
   :global(*) { box-sizing: border-box; }
 
-    :global(html),
+  :global(html),
   :global(body) {
     margin: 0;
     padding: 0;
@@ -80,7 +81,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   h1 {
@@ -114,7 +115,8 @@
   }
 
   input[type='email'] {
-    flex: 1 1 14rem;
+    flex: 1 1 10rem;
+    min-width: 0;
     padding: 1rem 1.1rem;
     font: inherit;
     font-size: 1.1rem;
@@ -152,5 +154,34 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
+  }
+
+  @media (max-width: 600px) {
+        .page {
+      padding: 2rem 1rem;
+      min-height: 100svh;
+    }
+    main {
+      gap: 1rem;
+    }
+
+    h1 {
+      font-size: 15vw;
+    }
+
+    .description {
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    form {
+      gap: 0.4rem;
+    }
+
+    input[type='email'],
+    button {
+      flex: 1 1 100%;
+      padding: 0.8rem 1rem;
+    }
   }
 </style>

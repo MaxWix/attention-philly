@@ -8,7 +8,7 @@
 
     <p class="description">
       A biweekly bulletin of events for Philadelphians looking to connect,
-      create, and exercise attention in off-tech spaces, leaving big tech
+      create, and exercise attention in offline spaces, leaving big tech
       behind!
     </p>
 

@@ -36,7 +36,7 @@
 
         <h2>But without social media… how do I stay connected?</h2>
         <p>
-          The event is the medium, the public is the place (shout out the  <a href="        https://www.404media.co/luddite-events-nyc-off-tech-summer-of-ludd/">NYC
+          The event is the medium, the public is the place (shout out the  <a target="_blank" href="https://www.404media.co/luddite-events-nyc-off-tech-summer-of-ludd/">NYC
           Luddite community</a> for this language).
         </p>
 
@@ -52,8 +52,8 @@
         <h2>How can I help?</h2>
         <p>
           Get out there. Participate. Learn the marks of others,
-          make your own. See an event you are excited about? share it with me!
-          Hosting an event? share it with me! There is no community without you.
+          make your own. See an event you are excited about? Share it with me!
+          Hosting an event? Share it with me! There is no community without you.
         </p>
         <p>
           Email me at <a href="mailto:attentionphl@proton.me">attentionphl@proton.me</a>

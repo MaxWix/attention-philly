@@ -28,11 +28,10 @@
     {#if page === 'about'}
       <article class="about">
         <p>
-          I started this with the goal of building an offline community
-          infrastructure in Philly, free of digital surveillance and addictive
-          design. It's a rejection of the idea that big-tech platforms are
+          Attention, Philly's goal is to create an offline social and cultural
+          infrastructure for Philadelphia. It's a rejection of the idea that big-tech platforms are
           necessary for social prosperity or information sharing (I have an inkling that we may be
-          better off without them, anyway).
+          better off without them, anyway). 
         </p>
 
         <h2>But without social media… how do I stay connected?</h2>
